@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { UsersList } from "./_components/user-list";
 
-export default function UsersPage() {
+export function UsersContainer() {
 
   return (
     <div className="users-container flex flex-col gap-2">
