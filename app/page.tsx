@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 
 export default function MainPage() {
@@ -12,6 +13,28 @@ export default function MainPage() {
           View All Users
         </button>
       </Link>
+      <Link href="/ssr-example" prefetch={false} className="text-blue-600 underline">
+        See the server-side rendering example
+      </Link>
+      <Link href="/csr-example" prefetch={false} className="text-blue-600 underline">
+        See the client-side rendering example
+      </Link>
+      <Link href="/ssg-example" className="text-blue-600 underline">
+        See the static site generation example
+      </Link>
     </div>
   );
 }
+// import ServerComponent from "./ssr-example/page";
+// import ClientComponent from "./csr-example/page";
+
+// export default function Page() {
+//   console.log("Page rendered");
+
+//   return (
+//     <>
+//       <ServerComponent />
+//       <ClientComponent />
+//     </>
+//   );
+// }
